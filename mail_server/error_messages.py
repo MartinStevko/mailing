@@ -1,0 +1,5 @@
+login_required = 'Najprv sa musíš prihlásiť!'
+already_logged_in = 'Už si prihlásený ako <strong>%s</strong>, ak sa chceš prihlásiť s iným účtom, tak sa najprv musíš odhlásiť!'
+access_denied = 'Na zobrazenie tejto stránky nemáš dostatočné oprávnenia!'
+file_upload_successful = 'Súbor bol úspešne nahraný.'
+user_pass_not_matching = 'Používateľské meno a heslo sa nezhodujú!'
