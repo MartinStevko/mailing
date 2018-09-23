@@ -18,11 +18,19 @@ class MailView(View):
     template = 'mailing/index.html'
 
     def get(self, request):
-        # connection.open()
-        # email = mail.EmailMessage()
-        # email.send()
-        # or
-        # connection.send_messages([email])
-        # connection.close()
         print(connection)
+
+        email = mail.EmailMessage(
+            'Testovanie mailingu',
+            'Ak tato sprava dojde, bude to fest dobre, lebo mailing mi zatial nikdy nesiel... :(',
+            'webmaster@pythonanywhere.com',
+            ['mstevko10@gmail.com']
+        )
+        print(email)
+
+        connection.open()
+        email.send()
+
+        # connection.send_messages([email])
+        connection.close()
         return render(request, self.template)
