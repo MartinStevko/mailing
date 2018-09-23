@@ -21,7 +21,7 @@ class MailView(View):
         # connection.open()
         # email = mail.EmailMessage()
         # email.send()
-        # or / respectively
+        # or
         # connection.send_messages([email])
         # connection.close()
         print(connection)
