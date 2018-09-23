@@ -23,7 +23,7 @@ class MailView(View):
         email = mail.EmailMessage(
             'Testovanie mailingu',
             'Ak tato sprava dojde, bude to fest dobre, lebo mailing mi zatial nikdy nesiel... :(',
-            'webmaster@pythonanywhere.com',
+            'postmaster@sandboxed4c14d561264981b491bdb1402da2c4.mailgun.org',
             ['mstevko10@gmail.com']
         )
         print(email)
