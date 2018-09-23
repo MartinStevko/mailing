@@ -13,6 +13,7 @@ from .models import *
 
 connection = mail.get_connection()
 
+
 class MailView(View):
     template = 'mailing/index.html'
 
@@ -20,7 +21,7 @@ class MailView(View):
         # connection.open()
         # email = mail.EmailMessage()
         # email.send()
-        # or
+        # or / respectively
         # connection.send_messages([email])
         # connection.close()
         print(connection)
