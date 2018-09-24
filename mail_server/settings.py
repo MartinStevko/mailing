@@ -189,7 +189,7 @@ TINYMCE_DEFAULT_CONFIG = {
 EMAIL_HOST = 'smtp.gmail.com'
 
 EMAIL_HOST_USER = 'riesky.web.testing@gmail.com'
-EMAIL_HOST_PASSWORD = 'heslonarieskytesty'
+EMAIL_HOST_PASSWORD = '' # heslo na riesky testy
 
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
