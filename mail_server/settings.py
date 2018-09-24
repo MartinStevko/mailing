@@ -134,11 +134,11 @@ MEDIA_ROOT  = '/var/www/mailing.pythonanywhere.com/media/'
 ##################
 '''
 
-### Development ###
+# Development #
 STATIC_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
-##################
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+###############
 
 STATIC_URL = '/static/'
 
@@ -183,15 +183,13 @@ TINYMCE_DEFAULT_CONFIG = {
 
 
 # Mail configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST = 'localhost'
+# Enable Captcha on gmail account
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_HOST_USER = 'riesky.web.testing@gmail.com'
+EMAIL_HOST_PASSWORD = 'heslonarieskytesty'
+
 EMAIL_PORT = 587
-
-EMAIL_HOST_USER = 'username'
-EMAIL_HOST_PASSWORD = 'password'
-
 EMAIL_USE_TLS = True
-
-EMAIL_SUBJECT_PREFIX = '[Nieviem] '
-EMAIL_USE_LOCALTIME = True
